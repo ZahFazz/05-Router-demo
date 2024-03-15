@@ -16,21 +16,39 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Praktikum 1
+Todo: Buatlah halaman /profile yang menampilkan isi biodata anda dengan menggunakan routing di NextJS.
+![alt text](image.png)
+![alt text](image-1.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Praktikum 2
+Dengan menggunakan konsep yang sama pada Praktikum 1, silahkan tambahkan susunan folder /blogs/first dan /blogs/second. Kemudian tambahkan masing-masing untuk setiap folder dengan file page.tsx.
+Pada file /blogs/page.tsx buatlah function component seperti kode berikut atau anda dapat mengkreasikan tampilan dengan selera anda!
+![alt text](image-2.png)
+![alt text](image-4.png)
 
-## Learn More
+Todo: Lengkapi function component pada /blogs/second/page.tsx
+![alt text](image-3.png)
+![alt text](image-5.png)
 
-To learn more about Next.js, take a look at the following resources:
+Apa kekurangan yang mungkin terjadi jika menggunakan pendekatan pada Praktikum 2 untuk menangani routing?
+~file akan terlalu besar dan banyak, karena setiap perpindahan page mengakses file lain jadi akan ada terlalu banyak file jika menggunakan metode dalam praktikum 2
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Praktikum 3
+Buatlah file /products/page.tsx yang berisi function component untuk menampilkan list dari products seperti kode berikut.
+![alt text](image-6.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Untuk mendefinisikan url path di NextJs menggunakan konvensi penamaan direktori dengan mengapit nama path dengan simbol [ ]. Sebagai contoh: productId menandakan bahwa path dinamis menggunakan variabel productId (Catatan: Anda boleh menuliskan hanya dengan [id], tetapi untuk mempermudah pembacaan konteks sebaiknya jangan gunakan hanya id).
+Kemudian buatlah file page.tsx pada lokasi /app/products/productId dan tambahkan kode sebagai berikut.
+![alt text](image-7.png)
+Untuk mendapatkan nilai path, anda dapat menggunakan pemanggilan params.productId. Pemanggilan atribut params, disesuaikan dengan pendefinisian nama path.
+Cobalah akses halaman /products dan /products/1 pada browser anda. Ubah nilai productId dengan nilai lainnya.
+![alt text](image-8.png)![alt text](image-9.png)
 
-## Deploy on Vercel
+Todo 1: Perbaiki implementasi Praktikum 2 menggunakan Dynamic Routes
+![alt text](image-10.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Todo 2: Dengan menggunakan konsep Nested Routes dan Dynamic Routes, buatlah halaman dengan routing /products/[productId]/reviews/[reviewId]
+![alt text](image-11.png)
+![alt text](image-12.png)
+![alt text](image-13.png)
